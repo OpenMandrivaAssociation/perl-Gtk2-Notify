@@ -3,9 +3,9 @@
 Name:		perl-%{realname}
 Version:    0.03
 Release:    %mkrel 1
-License:	Unknow
+License:	GPL
 Group:		Development/Perl
-Summary:    TODO
+Summary:    Perl interface to libnotify
 Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/Gtk2/Gtk2-Notify-%{version}.tar.bz2
 Url:		http://search.cpan.org/dist/%{realname}
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -14,8 +14,9 @@ BuildRequires:	perl(ExtUtils::Depends)
 BuildRequires:	perl-ExtUtils-PkgConfig
 BuildRequires:  libnotify-devel	
 BuildRequires:  perl-Gtk2
+BuildRequires:  perl-Test-Exception
 %description
-TODO
+Perl interface to libnotify.
 
 %prep
 %setup -q -n Gtk2-Notify-%{version} 
@@ -25,7 +26,8 @@ TODO
 %make
 
 %check
-make test
+# test requires dbus service and X11 to be used 
+#make test
 
 %install
 rm -rf $RPM_BUILD_ROOT

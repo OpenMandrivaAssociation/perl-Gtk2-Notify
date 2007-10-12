@@ -1,7 +1,7 @@
 %define realname   Gtk2-Notify
 
 Name:		perl-%{realname}
-Version:    0.03
+Version:    0.04
 Release:    %mkrel 1
 License:	GPL
 Group:		Development/Perl

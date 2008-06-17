@@ -2,7 +2,7 @@
 
 Name:		perl-%{realname}
 Version:    0.04
-Release:    %mkrel 2
+Release:    %mkrel 3
 License:	GPL
 Group:		Development/Perl
 Summary:    Perl interface to libnotify

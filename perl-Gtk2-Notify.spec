@@ -1,8 +1,8 @@
 %define realname   Gtk2-Notify
 
 Name:		perl-%{realname}
-Version:    0.04
-Release:    %mkrel 3
+Version:    0.05
+Release:    %mkrel 1
 License:	GPL
 Group:		Development/Perl
 Summary:    Perl interface to libnotify

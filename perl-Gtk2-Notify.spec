@@ -18,7 +18,6 @@ BuildRequires:	perl-ExtUtils-PkgConfig
 BuildRequires:  perl-Gtk2
 BuildRequires:  perl-Test-Exception
 BuildRequires:	perl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Perl interface to libnotify.
@@ -37,14 +36,9 @@ Perl interface to libnotify.
 #make test
 
 %install
-rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
-%defattr(-,root,root)
 %doc Changes README
 %{perl_vendorarch}/*
 %{_mandir}/man3/*

@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 3
+Release:    4
 
 Summary:    Perl interface to libnotify
 License:	GPL
@@ -25,7 +25,7 @@ Perl interface to libnotify.
 
 %prep
 %setup -q -n %{upstream_name}-%{upstream_version}
-%patch0 -p1
+%patch0 -p1 -b .libnotify7~
 
 %build
 %define _disable_ld_no_undefined 1

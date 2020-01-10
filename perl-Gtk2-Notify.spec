@@ -24,7 +24,7 @@ Perl interface to libnotify.
 
 %prep
 %setup -qn %{modname}-%{modver}
-%apply_patches
+%autopatch -p1
 
 %build
 %define _disable_ld_no_undefined 1

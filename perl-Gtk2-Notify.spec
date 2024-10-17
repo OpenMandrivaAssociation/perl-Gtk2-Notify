@@ -7,7 +7,7 @@ Version:	%perl_convert_version %{modver}
 Release:	20
 License:	GPLv2
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{modname}
+Url:		https://search.cpan.org/dist/%{modname}
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Gtk2/%{modname}-%{modver}.tar.bz2
 Source1:	perl-Gtk2-Notify.rpmlintrc
 Patch0:		Gtk2-Notify-0.05-libnotify-0.7.patch
